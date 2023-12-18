@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/489145d950bd469188e0f06be92ec2f5/artifacts
+end_time: 1702286076757
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: 489145d950bd469188e0f06be92ec2f5
+run_name: Passive Aggressive Regressor
+run_uuid: 489145d950bd469188e0f06be92ec2f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286076198
+status: 3
+tags: []
+user_id: prati

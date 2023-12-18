@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/18d8e7640e08498ca33fcaccd7d780c8/artifacts
+end_time: 1702574065587
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: 18d8e7640e08498ca33fcaccd7d780c8
+run_name: K Neighbors Classifier
+run_uuid: 18d8e7640e08498ca33fcaccd7d780c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574065325
+status: 3
+tags: []
+user_id: prati

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/629997009631107889/af3ee9a1e4944019a0b9efbcb3217973/artifacts
+end_time: 1702285111720
+entry_point_name: ''
+experiment_id: '629997009631107889'
+lifecycle_stage: active
+run_id: af3ee9a1e4944019a0b9efbcb3217973
+run_name: Dummy Classifier
+run_uuid: af3ee9a1e4944019a0b9efbcb3217973
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702285111248
+status: 3
+tags: []
+user_id: prati

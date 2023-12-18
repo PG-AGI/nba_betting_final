@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/ec01d201796a44889c22a3e77d475bc1/artifacts
+end_time: 1702574082235
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: ec01d201796a44889c22a3e77d475bc1
+run_name: Ridge Classifier
+run_uuid: ec01d201796a44889c22a3e77d475bc1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574072036
+status: 3
+tags: []
+user_id: prati

@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/3039a896d9be491195e4b11d5026470a/artifacts
+end_time: 1702574057383
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: 3039a896d9be491195e4b11d5026470a
+run_name: Dummy Classifier
+run_uuid: 3039a896d9be491195e4b11d5026470a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574056534
+status: 3
+tags: []
+user_id: prati

@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/0788ba3d19314886aed628d9eb0c036a/artifacts
+end_time: 1702574060997
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: 0788ba3d19314886aed628d9eb0c036a
+run_name: Ada Boost Classifier
+run_uuid: 0788ba3d19314886aed628d9eb0c036a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574060756
+status: 3
+tags: []
+user_id: prati

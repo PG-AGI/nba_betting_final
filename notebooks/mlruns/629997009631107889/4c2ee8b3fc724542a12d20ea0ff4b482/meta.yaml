@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/629997009631107889/4c2ee8b3fc724542a12d20ea0ff4b482/artifacts
+end_time: 1702285112992
+entry_point_name: ''
+experiment_id: '629997009631107889'
+lifecycle_stage: active
+run_id: 4c2ee8b3fc724542a12d20ea0ff4b482
+run_name: SVM - Linear Kernel
+run_uuid: 4c2ee8b3fc724542a12d20ea0ff4b482
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702285112669
+status: 3
+tags: []
+user_id: prati

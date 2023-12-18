@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/26c1dff5919c41ca8cc3c63e7a0ff6c1/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: 26c1dff5919c41ca8cc3c63e7a0ff6c1
+run_name: Session Initialized 85f5
+run_uuid: 26c1dff5919c41ca8cc3c63e7a0ff6c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286000102
+status: 1
+tags: []
+user_id: prati

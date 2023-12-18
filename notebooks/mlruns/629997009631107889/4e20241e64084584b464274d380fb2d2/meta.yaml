@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/629997009631107889/4e20241e64084584b464274d380fb2d2/artifacts
+end_time: 1702285113880
+entry_point_name: ''
+experiment_id: '629997009631107889'
+lifecycle_stage: active
+run_id: 4e20241e64084584b464274d380fb2d2
+run_name: Gradient Boosting Classifier
+run_uuid: 4e20241e64084584b464274d380fb2d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702285113579
+status: 3
+tags: []
+user_id: prati

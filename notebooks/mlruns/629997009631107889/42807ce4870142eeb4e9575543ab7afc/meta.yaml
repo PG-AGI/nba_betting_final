@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/629997009631107889/42807ce4870142eeb4e9575543ab7afc/artifacts
+end_time: 1702285117229
+entry_point_name: ''
+experiment_id: '629997009631107889'
+lifecycle_stage: active
+run_id: 42807ce4870142eeb4e9575543ab7afc
+run_name: Light Gradient Boosting Machine
+run_uuid: 42807ce4870142eeb4e9575543ab7afc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702285116936
+status: 3
+tags: []
+user_id: prati

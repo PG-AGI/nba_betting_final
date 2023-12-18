@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/629997009631107889/7ee986405eaa420094c4dcc6d03cfa7c/artifacts
+end_time: 1702285114707
+entry_point_name: ''
+experiment_id: '629997009631107889'
+lifecycle_stage: active
+run_id: 7ee986405eaa420094c4dcc6d03cfa7c
+run_name: Quadratic Discriminant Analysis
+run_uuid: 7ee986405eaa420094c4dcc6d03cfa7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702285114440
+status: 3
+tags: []
+user_id: prati

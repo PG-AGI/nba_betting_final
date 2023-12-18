@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/acf8bcdcbf594de590d0a5b289cbca0c/artifacts
+end_time: 1702574060382
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: acf8bcdcbf594de590d0a5b289cbca0c
+run_name: Gradient Boosting Classifier
+run_uuid: acf8bcdcbf594de590d0a5b289cbca0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574060106
+status: 3
+tags: []
+user_id: prati

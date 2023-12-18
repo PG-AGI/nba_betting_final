@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/fac6916886bb41ee9f6fd16442266fbf/artifacts
+end_time: 1702574058192
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: fac6916886bb41ee9f6fd16442266fbf
+run_name: Naive Bayes
+run_uuid: fac6916886bb41ee9f6fd16442266fbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574057866
+status: 3
+tags: []
+user_id: prati

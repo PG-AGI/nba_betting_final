@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/b29c753eacec4fe8b94c7859821e69ce/artifacts
+end_time: 1702574061622
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: b29c753eacec4fe8b94c7859821e69ce
+run_name: Extra Trees Classifier
+run_uuid: b29c753eacec4fe8b94c7859821e69ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574061338
+status: 3
+tags: []
+user_id: prati

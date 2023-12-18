@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/629997009631107889/e2b8c8568de647ac9423c03d8131867f/artifacts
+end_time: 1702285115133
+entry_point_name: ''
+experiment_id: '629997009631107889'
+lifecycle_stage: active
+run_id: e2b8c8568de647ac9423c03d8131867f
+run_name: Decision Tree Classifier
+run_uuid: e2b8c8568de647ac9423c03d8131867f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702285114840
+status: 3
+tags: []
+user_id: prati

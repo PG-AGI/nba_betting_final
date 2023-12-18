@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/1304f9be1c1947769e7494a4477d3849/artifacts
+end_time: 1702286055453
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: 1304f9be1c1947769e7494a4477d3849
+run_name: AdaBoost Regressor
+run_uuid: 1304f9be1c1947769e7494a4477d3849
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286055061
+status: 3
+tags: []
+user_id: prati

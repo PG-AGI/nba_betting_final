@@ -1,0 +1,3 @@
+game_id,bet_datetime,bet_status,bet_amount,bet_price,bet_location,bet_profit_loss,bet_direction,bet_line
+20221117PORBKN,2022-11-18 12:53:28,Other,100.0,-110,Test,0.0,Away,-7.5
+20221126TORDAL,2022-11-26 13:40:13,Win,10.0,-110,FanDuel,9.09,Home,1.5

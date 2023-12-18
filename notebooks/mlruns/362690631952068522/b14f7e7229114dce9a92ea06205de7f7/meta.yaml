@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/b14f7e7229114dce9a92ea06205de7f7/artifacts
+end_time: 1702286074166
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: b14f7e7229114dce9a92ea06205de7f7
+run_name: Dummy Regressor
+run_uuid: b14f7e7229114dce9a92ea06205de7f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286073744
+status: 3
+tags: []
+user_id: prati

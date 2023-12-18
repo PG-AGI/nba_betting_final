@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Projects/nba_betting_final/mlruns/588941596745642854/d6e20d8b77674ffa9626316a116bd2d2/artifacts
+end_time: 1702574071691
+entry_point_name: ''
+experiment_id: '588941596745642854'
+lifecycle_stage: active
+run_id: d6e20d8b77674ffa9626316a116bd2d2
+run_name: Logistic Regression
+run_uuid: d6e20d8b77674ffa9626316a116bd2d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702574066057
+status: 3
+tags: []
+user_id: prati

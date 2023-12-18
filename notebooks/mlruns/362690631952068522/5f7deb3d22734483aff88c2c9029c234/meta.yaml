@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/5f7deb3d22734483aff88c2c9029c234/artifacts
+end_time: 1702286056041
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: 5f7deb3d22734483aff88c2c9029c234
+run_name: Random Forest Regressor
+run_uuid: 5f7deb3d22734483aff88c2c9029c234
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286055617
+status: 3
+tags: []
+user_id: prati

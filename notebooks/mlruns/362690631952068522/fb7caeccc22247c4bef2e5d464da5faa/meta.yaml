@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/fb7caeccc22247c4bef2e5d464da5faa/artifacts
+end_time: 1702286077527
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: fb7caeccc22247c4bef2e5d464da5faa
+run_name: Least Angle Regression
+run_uuid: fb7caeccc22247c4bef2e5d464da5faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286077124
+status: 3
+tags: []
+user_id: prati

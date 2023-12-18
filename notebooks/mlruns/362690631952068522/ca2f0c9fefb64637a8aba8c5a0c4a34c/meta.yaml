@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/ca2f0c9fefb64637a8aba8c5a0c4a34c/artifacts
+end_time: 1702286081939
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: ca2f0c9fefb64637a8aba8c5a0c4a34c
+run_name: Lasso Regression
+run_uuid: ca2f0c9fefb64637a8aba8c5a0c4a34c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286081248
+status: 3
+tags: []
+user_id: prati

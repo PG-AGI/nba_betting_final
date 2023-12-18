@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/prati/Downloads/NBA_Betting-main/notebooks/mlruns/362690631952068522/c34e5ed8d54a4b4e96082a4ecd59f589/artifacts
+end_time: 1702286054453
+entry_point_name: ''
+experiment_id: '362690631952068522'
+lifecycle_stage: active
+run_id: c34e5ed8d54a4b4e96082a4ecd59f589
+run_name: Huber Regressor
+run_uuid: c34e5ed8d54a4b4e96082a4ecd59f589
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702286053843
+status: 3
+tags: []
+user_id: prati
