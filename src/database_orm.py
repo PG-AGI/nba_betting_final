@@ -1,7 +1,6 @@
 # Import necessary modules
 import os
 
-from dotenv import load_dotenv
 from sqlalchemy import (
     Boolean,
     Column,

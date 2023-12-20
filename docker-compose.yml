@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_NAME=nba_betting
+      - DB_USER=postgres
+      - DB_PASS=123654
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: nba_betting
+      POSTGRES_PASSWORD: 123654
+    ports:
+      - "5432:5432"
