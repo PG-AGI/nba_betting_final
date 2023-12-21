@@ -17,4 +17,3 @@ def run_model_training():
 if __name__ == "__main__":
     run_etl()
     run_model_training()
-

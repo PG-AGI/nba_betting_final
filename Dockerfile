@@ -10,8 +10,13 @@ COPY . /app
 # Install dependencies from requirements.txt
 RUN pip install psycopg2-binary
 RUN pip install sqlalchemy==1.4.22
-RUN for i in {1..5}; do pip install --default-timeout=100 -r requirements.txt && break || sleep 15; done
+RUN pip install numpy
+RUN pip install pandas
+RUN pip install jupyter
 
+
+COPY install_requirements.sh .
+RUN chmod +x install_requirements.sh && ./install_requirements.sh
 
 # Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh
