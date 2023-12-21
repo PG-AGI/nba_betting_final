@@ -10,7 +10,7 @@ from src.database_orm import Base  # Adjust the import path as necessary
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # PostgreSQL connection settings
-DB_HOST = os.getenv('DB_HOST', 'db')
+DB_HOST = 'db'
 DB_NAME = os.getenv('DB_NAME', 'nba_betting')
 DB_USER = os.getenv('DB_USER', 'postgres')
 DB_PASS = os.getenv('DB_PASS', '123654')
