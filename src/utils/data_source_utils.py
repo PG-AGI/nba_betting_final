@@ -4,7 +4,6 @@ from datetime import datetime
 
 import pandas as pd
 import pytz
-from dotenv import load_dotenv
 from scrapy import Spider
 from scrapy.spiders import Spider
 from sqlalchemy import create_engine, inspect
@@ -16,11 +15,6 @@ here = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(here, "../.."))
 
 import config
-
-load_dotenv()
-DB_ENDPOINT = os.environ.get("DB_ENDPOINT")
-DB_PASSWORD = os.environ.get("DB_PASSWORD")
-ZYTE_API_KEY = os.environ.get("ZYTE_API_KEY")
 
 
 class BaseSpider(Spider):

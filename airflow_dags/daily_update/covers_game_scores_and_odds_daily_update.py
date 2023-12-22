@@ -4,9 +4,7 @@ from datetime import timedelta
 import pendulum
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from dotenv import load_dotenv
 
-load_dotenv()
 NBA_BETTING_BASE_DIR = os.getenv("NBA_BETTING_BASE_DIR")
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 

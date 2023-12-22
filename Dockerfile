@@ -9,29 +9,40 @@ COPY . /app
 
 # Install dependencies from requirements.txt
 RUN pip install psycopg2-binary
-RUN pip install sqlalchemy==1.4.22
+RUN pip install datetime
 RUN pip install numpy
 RUN pip install pandas
-RUN pip install jupyter
-RUN pip install nvidia-cublas-cu11
-RUN pip install nvidia-cuda-cupti-cu11
-RUN pip install nvidia-cuda-nvrtc-cu11
-RUN pip install nvidia-cuda-runtime-cu11
-RUN pip install nvidia-cudnn-cu11
-RUN pip install nvidia-cufft-cu11
-RUN pip install nvidia-curand-cu11
-RUN pip install nvidia-cusolver-cu11
-RUN pip install nvidia-cusparse-cu11
-RUN pip install nvidia-nccl-cu11
-RUN pip install nvidia-nvtx-cu11
-
+RUN pip install pytz
+RUN pip install sqlalchemy
+RUN pip install scrapy
+RUN pip install sqlalchemy
+RUN pip install sqlalchemy.orm
+RUN pip install scikit-base
+RUN pip install scikit-learn
+RUN pip install pendulum
+RUN pip install apache-airflow
+RUN pip install apache-airflow-providers-common-sql
+RUN pip install apache-airflow-providers-ftp
+RUN pip install apache-airflow-providers-http
+RUN pip install apache-airflow-providers-imap
+RUN pip install apache-airflow-providers-sqlite
+RUN pip install tensorflow
+RUN pip install autokeras
+RUN pip install pycaret
+RUN pip install scipy
+RUN pip install matplotlib
+RUN pip install seaborn
+RUN pip install ydata_profiling
+RUN pip install requests
+RUN pip install itemadapter
+RUN pip install nbconvert
 # # Copy requirements.txt and install_requirements.sh
 # COPY requirements.txt install_requirements.sh ./
 
 # Make the install script executable and run it
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 
-RUN pip install spacy && python -m spacy download en_core_web_sm
+# RUN pip install spacy && python -m spacy download en_core_web_sm
 
 # Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh

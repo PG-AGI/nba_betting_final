@@ -1,449 +1,477 @@
-absl-py
-adagio
-aiohttp
-aiosignal
-alembic
-altair
-annotated-types
-ansi2html
-antlr4-python3-runtime
-anyio
+# absl-py
+# adagio
+# aiohttp
+# aiosignal
+# alembic
+# altair
+# annotated-types
+# ansi2html
+# antlr4-python3-runtime
+# anyio
+# apache-airflow
+# apache-airflow-providers-common-sql
+# apache-airflow-providers-ftp
+# apache-airflow-providers-http
+# apache-airflow-providers-imap
+# apache-airflow-providers-sqlite
+# apispec
+# appdirs
+# argcomplete
+# argon2-cffi
+# argon2-cffi-bindings
+# arrow
+# asgiref
+# astroid
+# asttokens
+# astunparse
+# async-lru
+# async-timeout
+# attrs
+# autokeras
+# Automat
+# autoviz
+# Babel
+# backcall
+# backoff
+# beautifulsoup4
+# bleach
+# blinker
+# blis
+# bokeh
+# Bottleneck
+# Brotli
+# cachelib
+# cachetools
+# catalogue
+# catboost
+# category-encoders
+# cattrs
+# certifi
+# cffi
+# charset-normalizer
+# click
+# clickclick
+# cloudpickle
+# cmaes
+# cmake
+# colorama
+# colorcet
+# colorlog
+# colour
+# comm
+# numpy
+# joblib
+# json5
+# jsonpatch
+# jsonpath-ng
+# jsonpickle
+# jsonpointer
+# jsonschema
+# jsonschema-specifications
+# jupyter_client
+# jupyter_core
+# jupyter_server_terminals
+# jupyter_server
+# jupyterlab_server
+# jupyterlab
+# jupyterlab-pygments
+# jupyterlab-widgets
+# jupyter-lsp
+# jupyter-server
+# kaleido
+# keras
+# keras-core
+# keras-nlp
+# keras-tuner
+# kiwisolver
+# kmodes
+# comtypes
+# confection
+# ConfigSpace
+# ConfigUpdater
+# connexion
+# constantly
+# contourpy
+# cron-descriptor
+# croniter
+# cryptography
+# cssselect
+# cycler
+# cymem
+# Cython
+# daal
+# daal4py
+# dacite
+# dash
+# dash-auth
+# dash-bootstrap-components
+# dash-core-components
+# dash-cytoscape
+# dash-html-components
+# dash-table
+# dask
+# databricks-cli
+# debugpy
+# decorator
+# deepchecks
+# defusedxml
+# Deprecated
+# deprecation
+# dill
+# distributed
+# Django
+# dm-tree
+# dnspython
+# docker
+# docutils
+# dtreeviz
+# email-validator
+# emcee
+# emoji
+# entrypoints
+# exceptiongroup
+# executing
+# explainerdashboard
+# fairlearn
+# fastjsonschema
+# filelock
+# flaky
+# Flask
+# Flask-AppBuilder
+# Flask-Babel
+# Flask-Caching
+# Flask-Cors
+# Flask-JWT-Extended
+# Flask-Limiter
+# Flask-Login
+# Flask-Session
+# flask-simplelogin
+# Flask-SQLAlchemy
+# Flask-WTF
+# flatbuffers
+# fonttools
+# fqdn
+# frozenlist
+# fs
+# fsspec
+# fugue
+# fugue-sql-antlr
+# future
+# gast
+# gevent
+# gitdb
+# GitPython
+# googleapis-common-protos
+# google-auth
+# google-auth-oauthlib
+# google-pasta
+# google-re2
+# graphviz
+# great-expectations
+# greenlet
+# grpcio
+# gunicorn
+# h11
+# h5py
+# holoviews
+# htmlmin
+# httpcore
+# httpx
+# hvplot
+# hyperlink
+# hyperopt
+# idna
+# ImageHash
+# imageio
+# imbalanced-learn
+# imgaug
+# importlib-metadata
+# importlib-resources
+# incremental
+# inflection
+# iniconfig
+# interpret
+# interpret-core
+# ipykernel
+# ipython
+# ipywidgets
+# isoduration
+# isort
+# itemadapter
+# itemloaders
+# itsdangerous
+# jax
+# jaxlib
+# jedi
+# Jinja2
+# jmespath
+# kt-legacy
+# langcodes
+# lazy_loader
+# lazy-object-proxy
+# levenshtein
+# libclang
+# lightgbm
+# lime
+# limits
+# linkify-it-py
+# lit
+# llvmlite
+# locket
+# lockfile
+# lxml
+# makefun
+# Mako
+# Markdown
+# markdown-it-py
+# MarkupSafe
+# marshmallow
+# marshmallow-enum
+# marshmallow-oneofschema
+# marshmallow-sqlalchemy
+# matplotlib
+# matplotlib-inline
+# mccabe
+# mdit-py-plugins
+# mdurl
+# Metaphone
+# mistune
+# ml-dtypes
+# mlflow
+# mlxtend
+# more-itertools
+# mpmath
+# msgpack
+# multidict
+# multimethod
+# multiprocess
+# murmurhash
+# namex
+# nbclassic
+# nbclient
+# nbconvert
+# nbformat
+# nest-asyncio
+# networkx
+# nltk
+# notebook_shim
+# notebook
+# numba
+# nvidia-cublas-cu11
+# nvidia-cuda-cupti-cu11
+# nvidia-cuda-nvrtc-cu11
+# nvidia-cuda-runtime-cu11
+# nvidia-cudnn-cu11
+# nvidia-cufft-cu11
+# nvidia-curand-cu11
+# nvidia-cusolver-cu11
+# nvidia-cusparse-cu11
+# nvidia-nccl-cu11
+# nvidia-nvtx-cu11
+# oauthlib
+# opencv-python
+# opentelemetry-api
+# opentelemetry-exporter-otlp
+# opentelemetry-exporter-otlp-proto-common
+# opentelemetry-exporter-otlp-proto-grpc
+# opentelemetry-exporter-otlp-proto-http
+# opentelemetry-proto
+# opentelemetry-sdk
+# opentelemetry-semantic-conventions
+# opt-einsum
+# optuna
+# ordered-set
+# orjson
+# overrides
+# oyaml
+# packaging
+# pandas
+# pandas-dq
+# pandas-profiling
+# pandocfilters
+# panel
+# param
+# parsel
+# parso
+# partd
+# pathspec
+# pathy
+# patsy
+# pendulum
+# pexpect
+# phik
+# pickleshare
+# Pillow
+# platformdirs
+# plotly
+# plotly-resampler
+# pluggy
+# ply
+# pmdarima
+# preshed
+# prison
+# probableparsing
+# prometheus-client
+# prompt-toolkit
+# Protego
+# protobuf
+# psutil
+# psycopg2
+# ptyprocess
+# pure-eval
+# py4j
+# pyamg
+# pyaml
+# pyarrow
+# pyasn1
+# pyasn1-modules
+# PyAudio
+# pycaret
+# pycodestyle
+# pycparser
+# pyct
+# pydantic_core
+# pydantic
+# PyDispatcher
+# Pygments
+# PyJWT
+# pylance
+# pylint
+# pynisher
+# pynndescent
+# PyNomaly
+# pyod
+# pyOpenSSL
+# pyparsing
+# pypiwin32
+# pyrfr
+# pyrsistent
+# pytest
+# python-crfsuite
+# python-daemon
+# python-dateutil
+# python-json-logger
+# python-slugify
+# python-stdnum
+# python-utils
+# pyttsx3
+# pytz
+# pyviz-comms
+# PyWavelets
+# PyYAML
+# pyzmq
+# qpd
+# qtconsole
+# QtPy
+# querystring-parser
+# queuelib
+# ray
+# referencing
+# regex
+# requests
+# requests-file
+# requests-oauthlib
+# requests-toolbelt
+# retrying
+# rfc3339-validator
+# rfc3986
+# rfc3986-validator
+# rich
+# rich-argparse
+# rpds-py
+# rsa
+# ruamel.yaml
+# runstats
+# SALib
+# schemdraw
+# scikit-base
+# testpath
+# textblob
+# text-unidecode
+# thinc
+# threadpoolctl
+# tifffile
+# tinycss2
+# tldextract
+# tomli
+# tomlkit
+# toolz
+# torch
+# torchvision
+# tornado
+# tqdm
+# trace-updater
+# traitlets
+# treeinterpreter
+# triad
+# triton
+# tsdownsample
+# tune-sklearn
+# Twisted
+# twisted-iocpsupport
+# typeguard
+# typer
+# types-python-dateutil
+# typing_extensions
+# tzdata
+# tzlocal
+# uc-micro-py
+# umap-learn
+# unicodecsv
+# uri-template
+# urllib3
+# usaddress
+# varname
+# visions
+# w3lib
+# waitress
+# wasabi
+# wcwidth
+# webcolors
+# webencodings
+# websocket-client
+# Werkzeug
+# widgetsnbextension
+# wordcloud
+# wrapt
+# WTForms
+# wurlitzer
+# xgboost
+# xlrd
+# xxhash
+# yarl
+# ydata-profiling
+# yellowbrick
+# zict
+# zipp
+# zope.event
+# zope.interface
+# zyte-api
+
+datetime
+numpy
+pandas
+pytz
+sqlalchemy
+scrapy
+sqlalchemy
+sqlalchemy.orm
+scikit-base
+scikit-learn
+warnings
+pendulum
 apache-airflow
 apache-airflow-providers-common-sql
 apache-airflow-providers-ftp
 apache-airflow-providers-http
 apache-airflow-providers-imap
 apache-airflow-providers-sqlite
-apispec
-appdirs
-argcomplete
-argon2-cffi
-argon2-cffi-bindings
-arrow
-asgiref
-astroid
-asttokens
-astunparse
-async-lru
-async-timeout
-attrs
+tensorflow
 autokeras
-Automat
-autoviz
-Babel
-backcall
-backoff
-beautifulsoup4
-bleach
-blinker
-blis
-bokeh
-Bottleneck
-Brotli
-cachelib
-cachetools
-catalogue
-catboost
-category-encoders
-cattrs
-certifi
-cffi
-charset-normalizer
-click
-clickclick
-cloudpickle
-cmaes
-cmake
-colorama
-colorcet
-colorlog
-colour
-comm
-numpy
-joblib
-json5
-jsonpatch
-jsonpath-ng
-jsonpickle
-jsonpointer
-jsonschema
-jsonschema-specifications
-jupyter_client
-jupyter_core
-jupyter_server_terminals
-jupyter_server
-jupyterlab_server
-jupyterlab
-jupyterlab-pygments
-jupyterlab-widgets
-jupyter-lsp
-jupyter-server
-kaleido
-keras
-keras-core
-keras-nlp
-keras-tuner
-kiwisolver
-kmodes
-comtypes
-confection
-ConfigSpace
-ConfigUpdater
-connexion
-constantly
-contourpy
-cron-descriptor
-croniter
-cryptography
-cssselect
-cycler
-cymem
-Cython
-daal
-daal4py
-dacite
-dash
-dash-auth
-dash-bootstrap-components
-dash-core-components
-dash-cytoscape
-dash-html-components
-dash-table
-dask
-databricks-cli
-debugpy
-decorator
-deepchecks
-defusedxml
-Deprecated
-deprecation
-dill
-distributed
-Django
-dm-tree
-dnspython
-docker
-docutils
-dtreeviz
-email-validator
-emcee
-emoji
-entrypoints
-exceptiongroup
-executing
-explainerdashboard
-fairlearn
-fastjsonschema
-filelock
-flaky
-Flask
-Flask-AppBuilder
-Flask-Babel
-Flask-Caching
-Flask-Cors
-Flask-JWT-Extended
-Flask-Limiter
-Flask-Login
-Flask-Session
-flask-simplelogin
-Flask-SQLAlchemy
-Flask-WTF
-flatbuffers
-fonttools
-fqdn
-frozenlist
-fs
-fsspec
-fugue
-fugue-sql-antlr
-future
-gast
-gevent
-gitdb
-GitPython
-googleapis-common-protos
-google-auth
-google-auth-oauthlib
-google-pasta
-google-re2
-graphviz
-great-expectations
-greenlet
-grpcio
-gunicorn
-h11
-h5py
-holoviews
-htmlmin
-httpcore
-httpx
-hvplot
-hyperlink
-hyperopt
-idna
-ImageHash
-imageio
-imbalanced-learn
-imgaug
-importlib-metadata
-importlib-resources
-incremental
-inflection
-iniconfig
-interpret
-interpret-core
-ipykernel
-ipython
-ipywidgets
-isoduration
-isort
-itemadapter
-itemloaders
-itsdangerous
-jax
-jaxlib
-jedi
-Jinja2
-jmespath
-kt-legacy
-langcodes
-lazy_loader
-lazy-object-proxy
-levenshtein
-libclang
-lightgbm
-lime
-limits
-linkify-it-py
-lit
-llvmlite
-locket
-lockfile
-lxml
-makefun
-Mako
-Markdown
-markdown-it-py
-MarkupSafe
-marshmallow
-marshmallow-enum
-marshmallow-oneofschema
-marshmallow-sqlalchemy
-matplotlib
-matplotlib-inline
-mccabe
-mdit-py-plugins
-mdurl
-Metaphone
-mistune
-ml-dtypes
-mlflow
-mlxtend
-more-itertools
-mpmath
-msgpack
-multidict
-multimethod
-multiprocess
-murmurhash
-namex
-nbclassic
-nbclient
-nbconvert
-nbformat
-nest-asyncio
-networkx
-nltk
-notebook_shim
-notebook
-numba
-nvidia-cublas-cu11
-nvidia-cuda-cupti-cu11
-nvidia-cuda-nvrtc-cu11
-nvidia-cuda-runtime-cu11
-nvidia-cudnn-cu11
-nvidia-cufft-cu11
-nvidia-curand-cu11
-nvidia-cusolver-cu11
-nvidia-cusparse-cu11
-nvidia-nccl-cu11
-nvidia-nvtx-cu11
-oauthlib
-opencv-python
-opentelemetry-api
-opentelemetry-exporter-otlp
-opentelemetry-exporter-otlp-proto-common
-opentelemetry-exporter-otlp-proto-grpc
-opentelemetry-exporter-otlp-proto-http
-opentelemetry-proto
-opentelemetry-sdk
-opentelemetry-semantic-conventions
-opt-einsum
-optuna
-ordered-set
-orjson
-overrides
-oyaml
-packaging
-pandas
-pandas-dq
-pandas-profiling
-pandocfilters
-panel
-param
-parsel
-parso
-partd
-pathspec
-pathy
-patsy
-pendulum
-pexpect
-phik
-pickleshare
-Pillow
-platformdirs
-plotly
-plotly-resampler
-pluggy
-ply
-pmdarima
-preshed
-prison
-probableparsing
-prometheus-client
-prompt-toolkit
-Protego
-protobuf
-psutil
-psycopg2
-ptyprocess
-pure-eval
-py4j
-pyamg
-pyaml
-pyarrow
-pyasn1
-pyasn1-modules
-PyAudio
 pycaret
-pycodestyle
-pycparser
-pyct
-pydantic_core
-pydantic
-PyDispatcher
-Pygments
-PyJWT
-pylance
-pylint
-pynisher
-pynndescent
-PyNomaly
-pyod
-pyOpenSSL
-pyparsing
-pypiwin32
-pyrfr
-pyrsistent
-pytest
-python-crfsuite
-python-daemon
-python-dateutil
-python-json-logger
-python-slugify
-python-stdnum
-python-utils
-pyttsx3
-pytz
-pyviz-comms
-PyWavelets
-PyYAML
-pyzmq
-qpd
-qtconsole
-QtPy
-querystring-parser
-queuelib
-ray
-referencing
-regex
+scipy
+matplotlib
+seaborn
+ydata_profiling
 requests
-requests-file
-requests-oauthlib
-requests-toolbelt
-retrying
-rfc3339-validator
-rfc3986
-rfc3986-validator
-rich
-rich-argparse
-rpds-py
-rsa
-ruamel.yaml
-runstats
-SALib
-schemdraw
-scikit-base
-testpath
-textblob
-text-unidecode
-thinc
-threadpoolctl
-tifffile
-tinycss2
-tldextract
-tomli
-tomlkit
-toolz
-torch
-torchvision
-tornado
-tqdm
-trace-updater
-traitlets
-treeinterpreter
-triad
-triton
-tsdownsample
-tune-sklearn
-Twisted
-twisted-iocpsupport
-typeguard
-typer
-types-python-dateutil
-typing_extensions
-tzdata
-tzlocal
-uc-micro-py
-umap-learn
-unicodecsv
-uri-template
-urllib3
-usaddress
-varname
-visions
-w3lib
-waitress
-wasabi
-wcwidth
-webcolors
-webencodings
-websocket-client
-Werkzeug
-widgetsnbextension
-wordcloud
-wrapt
-WTForms
-wurlitzer
-xgboost
-xlrd
-xxhash
-yarl
-ydata-profiling
-yellowbrick
-zict
-zipp
-zope.event
-zope.interface
-zyte-api
+itemadapter

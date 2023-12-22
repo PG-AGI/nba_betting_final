@@ -5,7 +5,6 @@ from datetime import timedelta
 import pendulum
 from airflow import DAG
 from airflow.decorators import task
-from dotenv import load_dotenv
 
 here = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(here, "../../"))

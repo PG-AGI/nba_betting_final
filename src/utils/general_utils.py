@@ -3,16 +3,10 @@ import sys
 from datetime import datetime
 
 import pandas as pd
-from dotenv import load_dotenv
 
 here = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(here, "../.."))
 from config import NBA_IMPORTANT_DATES
-
-load_dotenv()
-DB_ENDPOINT = os.environ.get("DB_ENDPOINT")
-DB_PASSWORD = os.environ.get("DB_PASSWORD")
-ZYTE_API_KEY = os.environ.get("ZYTE_API_KEY")
 
 
 from datetime import datetime

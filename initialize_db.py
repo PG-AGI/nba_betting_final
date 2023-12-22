@@ -41,7 +41,7 @@ def initialize_db():
 def insert_data_from_csv(csv_file, table_name, engine):
     try:
         # Read data from CSV file
-        CSV_FOLDER_PATH = "Data\CSV"
+        CSV_FOLDER_PATH = "Data/CSV"
         data = pd.read_csv(os.path.join(CSV_FOLDER_PATH, csv_file))
 
         # Insert data into the database
