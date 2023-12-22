@@ -1,18 +1,18 @@
 #!/bin/bash
 set -e
 
-# Function to install a package and handle potential errors
 install_package() {
     package=$1
-    echo "Attempting to install $package..."
-    if pip install "$package"; then
-        echo "$package installed successfully."
-    else
-        echo "Failed to install $package. Skipping..."
-    fi
+    echo "Installing $package in the background..."
+    pip install "$package" &
 }
 
-# Read each line in requirements.txt and attempt to install
+# Install each package in the background
 while IFS= read -r requirement || [[ -n "$requirement" ]]; do
     install_package "$requirement"
 done < requirements.txt
+
+# Wait for all background processes to finish
+wait
+
+echo "All packages installed."

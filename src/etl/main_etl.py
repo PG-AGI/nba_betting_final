@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 import pytz
-from dotenv import load_dotenv
 from sqlalchemy import create_engine
 
 
@@ -17,10 +16,6 @@ sys.path.append(os.path.join(here, "../.."))
 
 import config
 
-load_dotenv()
-DB_ENDPOINT = "localhost"
-DB_PASSWORD = 123654
-
 pd.set_option("display.max_columns", 200)
 pd.set_option("display.max_rows", None)
 pd.set_option("display.width", None)
@@ -30,8 +25,8 @@ class ETLPipeline:
     def __init__(
         self,
         start_date,
-        DB_ENDPOINT=DB_ENDPOINT,
-        DB_PASSWORD=DB_PASSWORD,
+        DB_ENDPOINT="localhost",
+        DB_PASSWORD=123654,
         config=config,
     ):
         self.database_engine = create_engine(

@@ -13,10 +13,25 @@ RUN pip install sqlalchemy==1.4.22
 RUN pip install numpy
 RUN pip install pandas
 RUN pip install jupyter
+RUN pip install nvidia-cublas-cu11
+RUN pip install nvidia-cuda-cupti-cu11
+RUN pip install nvidia-cuda-nvrtc-cu11
+RUN pip install nvidia-cuda-runtime-cu11
+RUN pip install nvidia-cudnn-cu11
+RUN pip install nvidia-cufft-cu11
+RUN pip install nvidia-curand-cu11
+RUN pip install nvidia-cusolver-cu11
+RUN pip install nvidia-cusparse-cu11
+RUN pip install nvidia-nccl-cu11
+RUN pip install nvidia-nvtx-cu11
 
+# # Copy requirements.txt and install_requirements.sh
+# COPY requirements.txt install_requirements.sh ./
 
-COPY install_requirements.sh .
-RUN chmod +x install_requirements.sh && ./install_requirements.sh
+# Make the install script executable and run it
+RUN pip install -r requirements.txt
+
+RUN pip install spacy && python -m spacy download en_core_web_sm
 
 # Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh

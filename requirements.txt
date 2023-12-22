@@ -128,7 +128,6 @@ dtreeviz
 email-validator
 emcee
 emoji
-en-core-web-sm
 entrypoints
 exceptiongroup
 executing
@@ -359,8 +358,6 @@ pyttsx3
 pytz
 pyviz-comms
 PyWavelets
-pywin32
-pywinpty
 PyYAML
 pyzmq
 qpd

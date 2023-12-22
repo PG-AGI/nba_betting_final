@@ -1,6 +1,7 @@
 import os
 import time
 import psycopg2
+import pandas as pd
 import logging
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -37,6 +38,43 @@ def initialize_db():
     Base.metadata.create_all(engine)
     logging.info("Database initialized successfully.")
 
-if __name__ == "__main__":
+def insert_data_from_csv(csv_file, table_name, engine):
+    try:
+        # Read data from CSV file
+        CSV_FOLDER_PATH = "Data\CSV"
+        data = pd.read_csv(os.path.join(CSV_FOLDER_PATH, csv_file))
+
+        # Insert data into the database
+        data.to_sql(table_name, engine, if_exists='append', index=False)
+        logging.info(f"Data from {csv_file} inserted into {table_name}.")
+    except Exception as e:
+        logging.error(f"Error inserting data from {csv_file}: {e}")
+
+def main():
+    # Wait for DB and initialize
     wait_for_db()
     initialize_db()
+
+    # Create database engine
+    engine = create_engine(f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}/{DB_NAME}')
+
+    # List of CSV files and corresponding table names
+    # Adjust the table names based on your actual database schema
+    csv_files = [
+        ('bets.csv', 'bets'),
+        ('betting_account.csv', 'betting_account'),
+        ('games.csv', 'games'),
+        ('team_fivethirtyeight_games.csv', 'team_fivethirtyeight_games'),
+        ('team_nbastats_general_advanced.csv', 'team_nbastats_general_advanced'),
+        ('team_nbastats_general_fourfactors.csv', 'team_nbastats_general_fourfactors'),
+        ('team_nbastats_general_opponent.csv', 'team_nbastats_general_opponent'),
+        ('team_nbastats_general_traditional.csv', 'team_nbastats_general_traditional'),
+        # Add other CSV files and table names here
+    ]
+
+    # Insert data for each CSV file
+    for csv_file, table_name in csv_files:
+        insert_data_from_csv(csv_file, table_name, engine)
+
+if __name__ == "__main__":
+    main()
