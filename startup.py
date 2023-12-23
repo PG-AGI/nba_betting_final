@@ -88,7 +88,19 @@ def run_model_training():
 
     for notebook in notebooks_to_run:
         full_path = os.path.join(notebooks_path, notebook)
-        subprocess.run(['jupyter', 'nbconvert', '--to', 'notebook', '--execute', full_path])
+        
+        try:
+            logging.info(f"Starting execution of notebook: {notebook}")
+            result = subprocess.run(['jupyter', 'nbconvert', '--to', 'notebook', '--execute', full_path], 
+                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            
+            if result.returncode != 0:
+                logging.error(f"Error executing notebook {notebook}: {result.stderr}")
+            else:
+                logging.info(f"Successfully executed notebook: {notebook}")
+        
+        except Exception as e:
+            logging.exception(f"Exception occurred while executing notebook {notebook}: {e}")
 
 if __name__ == "__main__":
     main()
