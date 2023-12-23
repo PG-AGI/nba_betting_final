@@ -61,14 +61,12 @@ def main():
     # List of CSV files and corresponding table names
     # Adjust the table names based on your actual database schema
     csv_files = [
-        ('bets.csv', 'bets'),
-        ('betting_account.csv', 'betting_account'),
         ('games.csv', 'games'),
         ('team_fivethirtyeight_games.csv', 'team_fivethirtyeight_games'),
         ('team_nbastats_general_advanced.csv', 'team_nbastats_general_advanced'),
         ('team_nbastats_general_fourfactors.csv', 'team_nbastats_general_fourfactors'),
         ('team_nbastats_general_opponent.csv', 'team_nbastats_general_opponent'),
-        ('team_nbastats_general_traditional.csv', 'team_nbastats_general_traditional'),
+        ('team_nbastats_general_traditional.csv', 'team_nbastats_general_traditional')
         # Add other CSV files and table names here
     ]
 

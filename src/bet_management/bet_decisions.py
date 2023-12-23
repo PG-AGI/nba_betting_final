@@ -11,7 +11,7 @@ from sqlalchemy import create_engine
 from tensorflow.keras.models import load_model
 
 load_dotenv()
-DB_ENDPOINT = "localhost"
+DB_ENDPOINT = "db"
 DB_PASSWORD = 123654
 NBA_BETTING_BASE_DIR = os.getenv("NBA_BETTING_BASE_DIR")
 

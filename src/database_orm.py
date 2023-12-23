@@ -408,6 +408,6 @@ class FivethirtyeightGamesTable(Base):
 if __name__ == "__main__":
     # Creates all database tables defined above that haven't been created yet.
     engine = create_engine(
-        f"postgresql://postgres:123654@localhost/nba_betting"
+        f"postgresql://postgres:123654@db/nba_betting"
     )
     Base.metadata.create_all(engine)

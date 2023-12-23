@@ -5,7 +5,7 @@ from psycopg2 import sql
 
 # Replace these with your PostgreSQL database connection details
 db_params = {
-    'host': 'localhost',
+    'host': 'db',
     'database': 'nba_betting',
     'user': 'postgres',
     'password': 123654,

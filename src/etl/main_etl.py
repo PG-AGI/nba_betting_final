@@ -25,7 +25,7 @@ class ETLPipeline:
     def __init__(
         self,
         start_date,
-        DB_ENDPOINT="localhost",
+        DB_ENDPOINT="db",
         DB_PASSWORD=123654,
         config=config,
     ):

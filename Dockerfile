@@ -8,6 +8,17 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies from requirements.txt
+# RUN nvidia-cublas-cu11
+# RUN nvidia-cuda-cupti-cu11
+# RUN nvidia-cuda-nvrtc-cu11
+# RUN nvidia-cuda-runtime-cu11
+# RUN nvidia-cudnn-cu11
+# RUN nvidia-cufft-cu11
+# RUN nvidia-curand-cu11
+# RUN nvidia-cusolver-cu11
+# RUN nvidia-cusparse-cu11
+# RUN nvidia-nccl-cu11
+# RUN nvidia-nvtx-cu11
 RUN pip install psycopg2-binary
 RUN pip install datetime
 RUN pip install numpy
@@ -36,6 +47,12 @@ RUN pip install ydata_profiling
 RUN pip install requests
 RUN pip install itemadapter
 RUN pip install nbconvert
+RUN pip install mlflow
+
+RUN pip install jupyter
+RUN python -m ipykernel install --user --name=python3
+RUN python -m ipykernel install --user --name=nba_kernel
+
 # # Copy requirements.txt and install_requirements.sh
 # COPY requirements.txt install_requirements.sh ./
 
@@ -45,18 +62,23 @@ RUN pip install nbconvert
 # RUN pip install spacy && python -m spacy download en_core_web_sm
 
 # Copy the entrypoint script
-COPY entrypoint.sh /entrypoint.sh
+# COPY entrypoint.sh /entrypoint.sh
 
-# Make the entrypoint script executable
-RUN chmod +x /entrypoint.sh
+# # Make the entrypoint script executable
+# RUN chmod +x /entrypoint.sh
 
-# Set the entrypoint script to be executed
-ENTRYPOINT ["/entrypoint.sh"]
+# # Set the entrypoint script to be executed
+# ENTRYPOINT ["/entrypoint.sh"]
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:5000/health || exit 1
+# # Health check
 
+
+# RUN python startup.py
+# RUN python notebooks/AutoDL_Cls.py
+# RUN python notebooks/AutoDL_Reg.py
+# RUN python notebooks/AutoML_Cls.py
+# RUN python notebooks/AutoML_Reg.py
+# RUN python notebooks/Exploratory_Analysis.py
 
 # Command to run the application
 CMD ["python", "startup.py"]
