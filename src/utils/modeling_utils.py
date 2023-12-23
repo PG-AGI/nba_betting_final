@@ -446,7 +446,7 @@ def default_serializer(obj):
     raise TypeError(f"Type {type(obj)} not serializable")
 
 
-def save_model_report(model_report, file_path="C:/Users/prati/Downloads/NBA_Betting-main/models/model_reports.json"):
+def save_model_report(model_report, file_path="models/model_reports.json"):
     # Check if the file exists
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"The file {file_path} does not exist.")

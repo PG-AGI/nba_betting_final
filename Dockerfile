@@ -51,7 +51,7 @@ RUN pip install mlflow
 
 RUN pip install jupyter
 RUN python -m ipykernel install --user --name=python3
-RUN python -m ipykernel install --user --name=nba_kernel
+RUN python -m ipykernel install --user --name=nba_kernal
 
 # # Copy requirements.txt and install_requirements.sh
 # COPY requirements.txt install_requirements.sh ./
