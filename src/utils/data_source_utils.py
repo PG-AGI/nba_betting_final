@@ -136,20 +136,20 @@ class BaseSpider(Spider):
         pass
 
 
-class BaseSpiderZyte(BaseSpider):
-    custom_settings = {
-        "DOWNLOAD_HANDLERS": {
-            "http": "scrapy_zyte_api.ScrapyZyteAPIDownloadHandler",
-            "https": "scrapy_zyte_api.ScrapyZyteAPIDownloadHandler",
-        },
-        "DOWNLOADER_MIDDLEWARES": {
-            "scrapy_zyte_api.ScrapyZyteAPIDownloaderMiddleware": 1000,
-        },
-        "REQUEST_FINGERPRINTER_CLASS": "scrapy_zyte_api.ScrapyZyteAPIRequestFingerprinter",
-        "ZYTE_API_KEY": ZYTE_API_KEY,
-        "ZYTE_API_TRANSPARENT_MODE": True,
-        "ZYTE_API_ENABLED": True,
-    }
+# class BaseSpiderZyte(BaseSpider):
+#     custom_settings = {
+#         "DOWNLOAD_HANDLERS": {
+#             "http": "scrapy_zyte_api.ScrapyZyteAPIDownloadHandler",
+#             "https": "scrapy_zyte_api.ScrapyZyteAPIDownloadHandler",
+#         },
+#         "DOWNLOADER_MIDDLEWARES": {
+#             "scrapy_zyte_api.ScrapyZyteAPIDownloaderMiddleware": 1000,
+#         },
+#         "REQUEST_FINGERPRINTER_CLASS": "scrapy_zyte_api.ScrapyZyteAPIRequestFingerprinter",
+#         "ZYTE_API_KEY": ZYTE_API_KEY,
+#         "ZYTE_API_TRANSPARENT_MODE": True,
+#         "ZYTE_API_ENABLED": True,
+#     }
 
 
 class BasePipeline:
@@ -160,7 +160,7 @@ class BasePipeline:
     """
 
     engine = create_engine(
-        f"postgresql://postgres:{DB_PASSWORD}@{DB_ENDPOINT}/nba_betting"
+        f"postgresql://postgres:pRACHI431@@localhost/nba_betting"
     )
     ITEM_CLASS = None
 

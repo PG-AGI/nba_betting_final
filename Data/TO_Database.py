@@ -7,12 +7,12 @@ from psycopg2 import sql
 db_params = {
     'host': 'db',
     'database': 'nba_betting',
-    'user': 'postgres',
+    'user': 'nba_betting_user',
     'password': 123654,
 }
 
 # List of CSV files in the "CSV" folder
-csv_folder = 'CSV'
+csv_folder = 'Data/CSV'
 csv_files = [
     'team_nbastats_general_advanced.csv',
     'team_nbastats_general_traditional.csv',

@@ -41,5 +41,4 @@ for spider in spiders:
     BashOperator(
         task_id=f"run_{spider}",
         bash_command=command,
-        dag=dag,
     )

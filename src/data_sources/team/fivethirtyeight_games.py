@@ -12,8 +12,8 @@ sys.path.append(os.path.join(here, "../.."))
 from database_orm import FivethirtyeightGamesTable
 
 load_dotenv()
-DB_ENDPOINT = os.getenv("DB_ENDPOINT")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_ENDPOINT = "db"
+DB_PASSWORD = 123654
 
 
 def update_all_data_538(engine):

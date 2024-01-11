@@ -7,7 +7,6 @@ from urllib.parse import urlencode
 
 import pytz
 import scrapy
-from dotenv import load_dotenv
 
 from ..item_loaders import NbastatsGeneralOpponentItemLoader
 from ..items import NbastatsGeneralOpponentItem
@@ -15,11 +14,9 @@ from ..items import NbastatsGeneralOpponentItem
 here = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(here, "../../../.."))
 
-from utils.data_source_utils import BaseSpider, BaseSpiderZyte, convert_season_to_short
+from utils.data_source_utils import BaseSpider, convert_season_to_short
 from utils.general_utils import find_season_information
 
-load_dotenv()
-ZYTE_API_KEY = os.environ.get("ZYTE_API_KEY")
 
 
 class TeamNbastatsGeneralOpponentSpider(BaseSpider):
@@ -155,14 +152,8 @@ class TeamNbastatsGeneralOpponentSpider(BaseSpider):
 
 
 class TeamNbastatsGeneralOpponentSpiderZyte(
-    BaseSpiderZyte, TeamNbastatsGeneralOpponentSpider
+    TeamNbastatsGeneralOpponentSpider
 ):
     name = "team_nbastats_general_opponent_spider_zyte"
     pipeline_name = "NbastatsGeneralOpponentPipeline"
     project_section = "team"
-
-    # Merge pipeline settings into custom_settings
-    pipeline_settings = BaseSpiderZyte.create_pipeline_settings(
-        project_section, pipeline_name
-    )
-    custom_settings = {**BaseSpiderZyte.custom_settings, **pipeline_settings}

@@ -7,8 +7,9 @@ import numpy as np
 import pandas as pd
 import pytz
 from sqlalchemy import create_engine
+from sqlalchemy import text
 
-
+sys.path.append("/app/src/etl")
 from feature_creation import FeatureCreationPostMerge, FeatureCreationPreMerge
 
 here = os.path.dirname(os.path.realpath(__file__))
@@ -199,20 +200,20 @@ class ETLPipeline:
             )
 
             with self.database_engine.begin() as connection:
-                query = """
+                query = text("""
                     INSERT INTO all_features_json (game_id, data)
                     SELECT game_id, data::jsonb FROM temp_table
                     ON CONFLICT (game_id) 
                     DO UPDATE
                     SET data = excluded.data
-                """
+                """)
 
                 result = connection.execute(query)
 
                 # Optional: Check the number of rows affected
                 # print(f"{result.rowcount} rows affected.")
 
-                drop_query = "DROP TABLE temp_table;"
+                drop_query = text("DROP TABLE temp_table;")
                 connection.execute(drop_query)
         except Exception as e:
             print("\n*** Error Saving Combined Features as JSONB")

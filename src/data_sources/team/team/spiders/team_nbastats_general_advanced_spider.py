@@ -7,7 +7,6 @@ from urllib.parse import urlencode
 
 import pytz
 import scrapy
-from dotenv import load_dotenv
 
 from ..item_loaders import NbastatsGeneralAdvancedItemLoader
 from ..items import NbastatsGeneralAdvancedItem
@@ -15,24 +14,25 @@ from ..items import NbastatsGeneralAdvancedItem
 here = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(here, "../../../.."))
 
-from utils.data_source_utils import BaseSpider, BaseSpiderZyte, convert_season_to_short
+from utils.data_source_utils import BaseSpider, convert_season_to_short
 from utils.general_utils import find_season_information
 
-load_dotenv()
-ZYTE_API_KEY = os.environ.get("ZYTE_API_KEY")
 
 
 class TeamNbastatsGeneralAdvancedSpider(BaseSpider):
     name = "team_nbastats_general_advanced_spider"
     pipeline_name = "NbastatsGeneralAdvancedPipeline"
     project_section = "team"
-    first_season_start_year = 2019
+    first_season_start_year = 1996
 
     custom_settings = BaseSpider.create_pipeline_settings(project_section, pipeline_name)
 
-    def __init__(self, dates, save_data=False, view_data=True, *args, **kwargs):
-        super().__init__(dates, save_data=save_data, view_data=view_data, *args, **kwargs)
-        self.dates = dates
+    def __init__(self, dates=None, save_data=False, view_data=True, *args, **kwargs):
+        if dates is None:
+            dates = datetime.now().strftime("%Y-%m-%d")
+        super().__init__(
+            dates, save_data=save_data, view_data=view_data, *args, **kwargs
+        )
 
     def start_requests(self):
         base_url = "https://stats.nba.com/stats/leaguedashteamstats"
@@ -153,14 +153,8 @@ class TeamNbastatsGeneralAdvancedSpider(BaseSpider):
 
 
 class TeamNbastatsGeneralAdvancedSpiderZyte(
-    BaseSpiderZyte, TeamNbastatsGeneralAdvancedSpider
+    TeamNbastatsGeneralAdvancedSpider
 ):
     name = "team_nbastats_general_advanced_spider_zyte"
     pipeline_name = "NbastatsGeneralAdvancedPipeline"
     project_section = "team"
-
-    # Merge pipeline settings into custom_settings
-    pipeline_settings = BaseSpiderZyte.create_pipeline_settings(
-        project_section, pipeline_name
-    )
-    custom_settings = {**BaseSpiderZyte.custom_settings, **pipeline_settings}

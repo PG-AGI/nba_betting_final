@@ -28,8 +28,8 @@ from bet_management.bet_decisions import on_demand_predictions
 from data_sources.game.odds_api import update_game_data
 
 load_dotenv()
-DB_ENDPOINT = os.getenv("DB_ENDPOINT")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_ENDPOINT = "db"
+DB_PASSWORD = 123654
 WEB_APP_USERNAME = os.getenv("WEB_APP_USERNAME")
 WEB_APP_PASSWORD = os.getenv("WEB_APP_PASSWORD")
 WEB_APP_SECRET_KEY = os.getenv("WEB_APP_SECRET_KEY")
@@ -131,7 +131,7 @@ def create_app():
 
         with get_db_connection() as connection:
             # Current Balance
-            current_balance_query = (
+            current_balance_query = text(
                 "SELECT balance FROM betting_account ORDER BY datetime DESC LIMIT 1;"
             )
             result = connection.execute(current_balance_query).fetchone()
@@ -366,7 +366,7 @@ def create_app():
             diff_bet_profit_loss = bet_profit_loss - old_profit_loss
             new_account_balance = old_account_balance + diff_bet_profit_loss
 
-            upsert_stmt = """
+            upsert_stmt = text("""
                 INSERT INTO bets (game_id, bet_datetime, bet_status, bet_amount, bet_price, bet_location, bet_line, bet_profit_loss, bet_direction)
                 VALUES (:bet_game_id, :bet_datetime, :bet_status, :bet_amount, :bet_price, :bet_location, :bet_line, :bet_profit_loss, :bet_direction)
                 ON CONFLICT (game_id)
@@ -381,12 +381,12 @@ def create_app():
                             bet_profit_loss = :bet_profit_loss,
                             bet_direction = :bet_direction
                 ;
-            """
+            """)
 
-            betting_account_stmt = """
+            betting_account_stmt = text("""
                 INSERT INTO betting_account (datetime, balance)
                 VALUES (:bet_datetime, :new_account_balance);
-            """
+            """)
 
             params = {
                 "bet_game_id": bet_game_id,

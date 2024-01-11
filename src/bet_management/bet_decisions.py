@@ -11,35 +11,36 @@ from sqlalchemy import create_engine
 from tensorflow.keras.models import load_model
 
 load_dotenv()
-DB_ENDPOINT = "db"
+DB_ENDPOINT = "db"   #database server address that is created in PostgreSQL
 DB_PASSWORD = 123654
-NBA_BETTING_BASE_DIR = os.getenv("NBA_BETTING_BASE_DIR")
+NBA_BETTING_BASE_DIR = os.getenv("NBA_BETTING_BASE_DIR")  #to get env variables from the main directory
 
-pd.set_option("display.width", 200)
+#Pandas display option config
+pd.set_option("display.width", 200)     
 pd.set_option("display.max_columns", 100)
 
 
 class Predictions:
     def __init__(
-        self,
-        line_type,
-        line_source="fanduel",
+        self,    #instance of the class itself
+        line_type,  #the type of line to be bet on (open or current)
+        line_source="fanduel",  #The source from which the line is taken
         DB_ENDPOINT=DB_ENDPOINT,
         DB_PASSWORD=DB_PASSWORD,
     ):
         """Initialize Game_Record with a database engine."""
 
         self.database_engine = create_engine(
-            f"postgresql://postgres:{DB_PASSWORD}@{DB_ENDPOINT}/nba_betting"
+            f"postgresql://postgres:{DB_PASSWORD}@{DB_ENDPOINT}/nba_betting"     #change db pass and endpoint to own
         )
-        self.line_type = line_type
-        self.line_source = line_source
-        self.df = None
-        self.prediction_df = None
-        self.ml_cls_model_1 = None
-        self.ml_reg_model_1 = None
-        self.dl_cls_model_1 = None
-        self.dl_reg_model_1 = None
+        self.line_type = line_type            #store line type
+        self.line_source = line_source        #store the source from whoch the line is taken   
+        self.df = None                        #Creating df for storing data in the dataframe (df)
+        self.prediction_df = None             #Store predictions in the df
+        self.ml_cls_model_1 = None            #Store ml classification model
+        self.ml_reg_model_1 = None            #Store ml regression model
+        self.dl_cls_model_1 = None            #Store deep learning cls model
+        self.dl_reg_model_1 = None            #Srore dl reg model
 
     def load_data(self, current_date=True, start_date=None, end_date=None):
         """Load data from database based on date filters."""
@@ -140,6 +141,7 @@ class Predictions:
         ml_reg_predictions_1 = pyc_reg.predict_model(
             self.ml_reg_model_1, data=selected_features
         )
+        print(self.dl_cls_model_1)
         dl_cls_predictions_1 = self.dl_cls_model_1.predict(selected_features)
         dl_reg_predictions_1 = self.dl_reg_model_1.predict(selected_features)
 
@@ -183,6 +185,7 @@ class Predictions:
             }
         )
 
+#Calculating home and visiting team rating value based on ml cls model
     def _ml_cls_rating_hv(self, x):
         if x["ml_cls_pred_1"] == True:
             return x["ml_cls_prob_1"]
@@ -199,6 +202,7 @@ class Predictions:
         # Weighted Average
         return ((ml_cls_rating_hv * 1) + (dl_cls_rating_hv * 1)) / 2
 
+#Prediction on which team may win
     def _prediction_direction(self, x):
         if x["game_rating_hv"] > 0.5:
             return "Home"
@@ -214,7 +218,7 @@ class Predictions:
             directional_game_rating = 1 - x["game_rating_hv"]
         else:
             return None
-        return directional_game_rating * 100
+        return directional_game_rating * 100       #Percentage on directional game rating
 
     def game_ratings(self):
         """
@@ -240,6 +244,7 @@ class Predictions:
 
     def save_records(self):
         """Save records to the database."""
+        print(self.prediction_df)
         try:
             self.prediction_df.to_sql(
                 "predictions",
@@ -250,19 +255,18 @@ class Predictions:
         except Exception as e:
             print(f"An error occurred while saving records: {e}")
 
-
 def main_predictions(current_date, start_date, end_date, line_type="open"):
     ml_cls_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_cls_nb_2023_10_30_06_26_58"
+        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_cls_nb_2023_12_11_14_28_03"
     )
     dl_cls_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_cls_dl_2023_10_30_06_36_54"
+        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_cls_dl_2024_01_10_04_44_04"
     )
     ml_reg_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_reg_lasso_2023_10_30_06_31_04"
+        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_reg_lasso_2023_12_11_14_43_17"
     )
     dl_reg_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_reg_dl_2023_10_30_06_40_04"
+        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_reg_dl_2024_01_10_03_13_16"
     )
 
     feature_set = [
@@ -305,6 +309,7 @@ def main_predictions(current_date, start_date, end_date, line_type="open"):
         predictions.load_data(
             current_date=current_date, start_date=start_date, end_date=end_date
         )
+        
         predictions.df = predictions.create_predictions(
             predictions.df, features=feature_set
         )
@@ -323,21 +328,21 @@ def main_predictions(current_date, start_date, end_date, line_type="open"):
         print(f"----- Predictions Update Failed -----")
         raise e
 
-
+#Just giving latest predictions on the current line as the game is going on
 def on_demand_predictions(
     current_date, start_date=None, end_date=None, line_type="current"
 ):
     ml_cls_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_cls_nb_2023_10_30_06_26_58"
+        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_cls_nb_2023_12_11_14_28_03"
     )
     dl_cls_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_cls_dl_2023_10_30_06_36_54"
+        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_cls_dl_2024_01_10_04_44_04"
     )
     ml_reg_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_reg_lasso_2023_10_30_06_31_04"
+        NBA_BETTING_BASE_DIR + "/models/AutoML/pycaret_reg_lasso_2023_12_11_14_43_17"
     )
     dl_reg_model_path = (
-        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_reg_dl_2023_10_30_06_40_04"
+        NBA_BETTING_BASE_DIR + "/models/AutoDL/autokeras_reg_dl_2024_01_10_03_13_16"
     )
 
     feature_set = [
@@ -400,8 +405,8 @@ def on_demand_predictions(
 
 
 if __name__ == "__main__":
-    # main_predictions(current_date=False, start_date="2020-09-01", end_date="2023-10-29")
-    # on_demand_predictions(
-    #     current_date=False, start_date="2023-09-01", end_date="2023-10-29"
-    # )
+    main_predictions(current_date=False, start_date="2020-09-01", end_date="2023-10-29")
+    on_demand_predictions(
+        current_date=False, start_date="2023-09-01", end_date="2023-10-29"
+    )
     pass

@@ -5,9 +5,11 @@ import psycopg2
 import subprocess
 import pandas as pd
 from sqlalchemy import create_engine
+from airflow.operators.bash import BashOperator
 from sqlalchemy.orm import sessionmaker
 from src.database_orm import Base  # Adjust the import path as 
 
+NBA_BETTING_BASE_DIR = "/usr/src/app/nba_betting"
 
 # Configure basic logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -64,6 +66,8 @@ def main():
     # Adjust the table names based on your actual database schema
     csv_files = [
         ('games.csv', 'games'),
+        ('lines.csv', 'lines'),
+        ('betting_account.csv', 'betting_account'),
         ('team_fivethirtyeight_games.csv', 'team_fivethirtyeight_games'),
         ('team_nbastats_general_advanced.csv', 'team_nbastats_general_advanced'),
         ('team_nbastats_general_fourfactors.csv', 'team_nbastats_general_fourfactors'),
@@ -76,33 +80,54 @@ def main():
     for csv_file, table_name in csv_files:
         insert_data_from_csv(csv_file, table_name, engine)
 
+spiders = [
+    "team_nbastats_general_traditional_spider",
+    "team_nbastats_general_advanced_spider",
+    "team_nbastats_general_fourfactors_spider",
+    "team_nbastats_general_opponent_spider",
+]
+
+
+for spider in spiders:
+    cmd_command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/team && scrapy crawl {spider} -a dates=daily_update -a save_data=True -a view_data=True"
+
+    result = subprocess.run(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+    # Check the result
+    if result.returncode == 0:
+        print("Command executed successfully.")
+        print("Output:")
+        print(result.stdout)
+    else:
+        print("Command failed with an error:")
+        print(result.stderr)
+cmd_command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/game && scrapy crawl game_covers_historic_scores_and_odds_spider -a dates=daily_update -a save_data=True -a view_data=True"
+
+result = subprocess.run(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+# Check the result
+if result.returncode == 0:
+    print("Command executed successfully.")
+    print("Output:")
+    print(result.stdout)
+else:
+    print("Command failed with an error:")
+    print(result.stderr)
+
 
 def run_etl():
     # Assuming the main ETL script is located in the 'etl' subdirectory
     # Replace 'main_etl.py' with the actual ETL script name
     subprocess.run(['python', 'src/etl/main_etl.py'])
 
-def run_model_training():
-    notebooks_path = 'notebooks'
-    notebooks_to_run = ['AutoDL_Cls.ipynb', 'AutoDL_Reg.ipynb', 'AutoML_Cls.ipynb', 'AutoML_Reg.ipynb', 'Exploratory_Analysis.ipynb']
+def run_Bet_decisions():
+    subprocess.run(['python', 'src/bet_management/bet_decisions.py'])
 
-    for notebook in notebooks_to_run:
-        full_path = os.path.join(notebooks_path, notebook)
-        
-        try:
-            logging.info(f"Starting execution of notebook: {notebook}")
-            result = subprocess.run(['jupyter', 'nbconvert', '--to', 'notebook', '--execute', full_path], 
-                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            
-            if result.returncode != 0:
-                logging.error(f"Error executing notebook {notebook}: {result.stderr}")
-            else:
-                logging.info(f"Successfully executed notebook: {notebook}")
-        
-        except Exception as e:
-            logging.exception(f"Exception occurred while executing notebook {notebook}: {e}")
+def run_app():
+    subprocess.run(['python', 'src/deployment/web_app/nba_app.py'])
 
 if __name__ == "__main__":
     main()
     run_etl()
-    run_model_training()
+    run_Bet_decisions()
+    run_app()

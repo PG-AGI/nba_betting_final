@@ -1,0 +1,557 @@
+2024-01-10 05:24:01,075:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-10 05:24:01,075:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-10 05:24:01,075:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-10 05:24:01,076:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-10 05:24:09,091:INFO:Initializing load_model()
+2024-01-10 05:24:09,092:INFO:load_model(model_name=C:/Users/SUYASH/Desktop/nba_betting_final - Copy/models/AutoML/pycaret_cls_nb_2023_12_11_14_28_03, platform=None, authentication=None, verbose=True)
+2024-01-10 05:24:09,902:WARNING:C:\Users\SUYASH\Desktop\nba_betting_final - Copy\penv\lib\site-packages\pycaret\internal\pipeline.py:145: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.4', 'setuptools': '69.0.3', 'pycaret': '3.2.0', 'IPython': '8.18.1', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.25.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.2', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.2.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.1', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.9.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.3.1', 'setuptools': '68.2.2', 'pycaret': '3.2.0', 'IPython': '8.17.2', 'ipywidgets': '8.1.1', 'tqdm': '4.66.1', 'numpy': '1.26.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.3.2', 'sklearn': '1.2.2', 'pyod': '1.1.1', 'imblearn': '0.11.0', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.6.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.18.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.0', 'sktime': '0.21.1', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.6', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.1', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2024-01-10 05:24:09,903:INFO:Initializing load_model()
+2024-01-10 05:24:09,903:INFO:load_model(model_name=C:/Users/SUYASH/Desktop/nba_betting_final - Copy/models/AutoML/pycaret_reg_lasso_2023_12_11_14_43_17, platform=None, authentication=None, verbose=True)
+2024-01-10 05:24:21,879:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,961:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,962:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,963:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,963:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,963:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,964:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,964:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,964:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,964:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,965:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,965:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,965:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,965:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,971:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,971:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,971:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,972:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,972:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,973:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,973:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,973:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,974:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,974:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,974:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,974:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,975:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,975:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,975:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,975:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,976:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:21,981:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,042:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,044:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,047:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,049:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,056:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,058:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,066:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,075:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,128:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,135:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,211:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,308:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,426:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,427:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,427:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,433:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,452:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,463:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,649:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,650:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,650:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,650:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,650:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,651:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,651:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,651:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,651:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,651:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,653:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,653:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,653:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,653:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,654:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,654:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,654:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,654:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,654:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,655:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,655:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,656:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,656:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,656:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,657:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,657:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,658:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,658:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,660:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,660:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,660:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,660:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,660:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,660:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,662:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,662:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,663:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,663:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,663:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,664:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,664:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,664:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,664:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,665:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,665:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,665:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,665:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,665:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,665:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,667:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,667:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,667:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,667:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,668:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,668:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,669:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,670:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,670:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,672:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,672:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,673:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,673:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,673:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,674:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,676:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,677:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,677:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,677:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,677:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,678:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,678:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,678:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,678:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,679:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,679:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,679:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,679:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,679:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,679:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,681:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,681:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,681:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,682:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,682:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,682:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,682:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,683:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,683:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,683:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,683:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,684:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,684:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,684:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,685:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,685:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,685:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,685:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,685:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,686:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,686:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,686:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,686:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,687:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,687:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,687:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,688:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,688:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,688:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,689:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,689:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,689:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,689:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,690:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,690:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,690:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,691:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,691:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,691:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,691:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,692:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,692:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,692:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,692:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:22,945:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:23,119:WARNING:c:\Users\SUYASH\Desktop\nba_betting_final - Copy\src\bet_management\bet_decisions.py:116: FutureWarning: The default dtype for empty Series will be 'object' instead of 'float64' in a future version. Specify a dtype explicitly to silence this warning.
+  data_df = df["data"].apply(pd.Series)
+
+2024-01-10 05:24:27,753:INFO:Initializing predict_model()
+2024-01-10 05:24:27,753:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000019346165E80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('placeholder', None), ('actual_estimator', GaussianNB())]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000019316DC3D30>)
+2024-01-10 05:24:27,753:INFO:Checking exceptions
+2024-01-10 05:24:27,753:INFO:Preloading libraries
+2024-01-10 05:24:28,045:INFO:Set up data.
+2024-01-10 05:24:28,131:INFO:Set up index.
+2024-01-10 05:24:35,413:INFO:Initializing predict_model()
+2024-01-10 05:24:35,413:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000019315451F40>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('placeholder', None),
+                ('actual_estimator', Lasso(alpha=1.2, random_state=2658))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000019312D8DAF0>)
+2024-01-10 05:24:35,413:INFO:Checking exceptions
+2024-01-10 05:24:35,413:INFO:Preloading libraries
+2024-01-10 05:24:35,414:INFO:Set up data.
+2024-01-10 05:24:35,429:INFO:Set up index.

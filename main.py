@@ -1,79 +1,108 @@
-import os
-import os
-from nbconvert import PythonExporter
-from nbformat import read
-import requests
-import warnings
+# import os
+# import time
+# import logging
+# import psycopg2
+import subprocess
+# import pandas as pd
+# from dotenv import load_dotenv
+# from sqlalchemy import create_engine
+# # from airflow.operators.bash import BashOperator
+# from sqlalchemy.orm import sessionmaker
+# from src.database_orm import Base  # Adjust the import path as 
 
-def main():
-    # Suppress all warnings
-    warnings.filterwarnings("ignore")
+# load_dotenv()
+NBA_BETTING_BASE_DIR = "E:/Projects/nba_betting_final - Copy - Copy"
+# import os
+# import os
+# from nbconvert import PythonExporter
+# from nbformat import read
+# import requests
+# import warnings
 
-    # Define the path to the daily_update directory
-    daily_update_dir = 'D:\\Projects\\NBA_Betting\\airflow_dags\\daily_update\\'
+# def main():
+#     # Suppress all warnings
+#     warnings.filterwarnings("ignore")
 
-    # List of all the Python scripts in the daily_update directory
-    scripts = [
-        'covers_game_scores_and_odds_daily_update.py',
-        'etl_daily_update.py',
-        'odds_api_daily_update.py',
-        'predictions_daily_update.py',
-        'team_nbastats_daily_update.py'
-    ]
+#     # Define the path to the daily_update directory
+#     daily_update_dir = 'E:\\Projects\\NBA_Betting_copy_copy\\airflow_dags\\daily_update\\'
 
-    for script in scripts:
-        try:
-            # Run the script and redirect stderr to null
-            os.system(f'python {daily_update_dir}{script} 2> nul')
-            print(f"{script} ran successfully.")
-        except Exception as e:
-            print(f"Failed to run {script}.")
-            print("Error:", e)
+#     # List of all the Python scripts in the daily_update directory
+#     scripts = [
+#         'covers_game_scores_and_odds_daily_update.py',
+#         'etl_daily_update.py',
+#         'odds_api_daily_update.py',
+#         'predictions_daily_update.py',
+#         'team_nbastats_daily_update.py'
+#     ]
 
-if __name__ == "__main__":
-    main()
+#     for script in scripts:
+#         try:
+#             # Run the script and redirect stderr to null
+#             os.system(f'python {daily_update_dir}{script} 2> nul')
+#             print(f"{script} ran successfully.")
+#         except Exception as e:
+#             print(f"Failed to run {script}.")
+#             print("Error:", e)
 
-API_KEY = "dfe5c02a2c391060ebf9a7d5f69715f7"
-API_ENDPOINT = "https://api.the-odds-api.com/v4/sports/basketball_nba/scores/?apiKey=dfe5c02a2c391060ebf9a7d5f69715f7"  # Replace with the actual API endpoint
+# if __name__ == "__main__":
+#     main()
 
-headers = {
-    "Authorization": f"Bearer {API_KEY}",
-    "Content-Type": "application/json",  # Adjust content type if necessary
-}
+# API_KEY = "dfe5c02a2c391060ebf9a7d5f69715f7"
+# API_ENDPOINT = "https://api.the-odds-api.com/v4/sports/basketball_nba/scores/?apiKey=dfe5c02a2c391060ebf9a7d5f69715f7"  # Replace with the actual API endpoint
 
-response = requests.get(API_ENDPOINT, headers=headers)
+# headers = {
+#     "Authorization": f"Bearer {API_KEY}",
+#     "Content-Type": "application/json",  # Adjust content type if necessary
+# }
 
-if response.status_code == 200:
-    print("API Key is working!")
-    # Optionally, print or process the API response data
-    print(response.json())
+# response = requests.get(API_ENDPOINT, headers=headers)
+
+# if response.status_code == 200:
+#     print("API Key is working!")
+#     # Optionally, print or process the API response data
+#     print(response.json())
+# else:
+#     print("API Key is not valid or there was an issue with the request.")
+#     print(f"Status code: {response.status_code}")
+#     # Optionally, print the response content for further investigation
+#     print(response.text)
+
+
+# # Get the absolute path to the 'notebook' folder
+# notebook_folder = os.path.abspath('notebooks')
+
+# def run_notebook(notebook_path):
+#     with open(notebook_path, 'r', encoding='utf-8') as notebook_file:
+#         notebook_content = read(notebook_file, as_version=4)
+
+#     exporter = PythonExporter()
+#     (python_code, _) = exporter.from_notebook_node(notebook_content)
+
+#     # Execute the notebook code
+#     exec(python_code, globals())
+
+# def run_all_notebooks(folder_path):
+#     for file_name in os.listdir(folder_path):
+#         if file_name.endswith('.ipynb'):
+#             notebook_path = os.path.join(folder_path, file_name)
+#             print(f"Running notebook: {file_name}")
+#             run_notebook(notebook_path)
+#             print(f"Finished running notebook: {file_name}\n")
+
+# if __name__ == "__main__":
+#     run_all_notebooks(notebook_folder)
+
+# command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/game && scrapy crawl game_covers_historic_scores_and_odds_spider -a dates=daily_update -a save_data=True -a view_data=True"
+
+cmd_command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/team && scrapy crawl team_nbastats_general_fourfactors_spider -a dates=daily_update -a save_data=True -a view_data=True"
+
+result = subprocess.run(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+# Check the result
+if result.returncode == 0:
+    print("Command executed successfully.")
+    print("Output:")
+    print(result.stdout)
 else:
-    print("API Key is not valid or there was an issue with the request.")
-    print(f"Status code: {response.status_code}")
-    # Optionally, print the response content for further investigation
-    print(response.text)
-
-
-# Get the absolute path to the 'notebook' folder
-notebook_folder = os.path.abspath('notebooks')
-
-def run_notebook(notebook_path):
-    with open(notebook_path, 'r', encoding='utf-8') as notebook_file:
-        notebook_content = read(notebook_file, as_version=4)
-
-    exporter = PythonExporter()
-    (python_code, _) = exporter.from_notebook_node(notebook_content)
-
-    # Execute the notebook code
-    exec(python_code, globals())
-
-def run_all_notebooks(folder_path):
-    for file_name in os.listdir(folder_path):
-        if file_name.endswith('.ipynb'):
-            notebook_path = os.path.join(folder_path, file_name)
-            print(f"Running notebook: {file_name}")
-            run_notebook(notebook_path)
-            print(f"Finished running notebook: {file_name}\n")
-
-if __name__ == "__main__":
-    run_all_notebooks(notebook_folder)
+    print("Command failed with an error:")
+    print(result.stderr)

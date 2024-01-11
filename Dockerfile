@@ -7,6 +7,10 @@ WORKDIR /app
 # Copy the project files into the container
 COPY . /app
 
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y build-essential
+RUN python -m venv /venv
+
 # Install dependencies from requirements.txt
 # RUN nvidia-cublas-cu11
 # RUN nvidia-cuda-cupti-cu11
@@ -81,6 +85,6 @@ RUN python -m ipykernel install --user --name=nba_kernal
 # RUN python notebooks/Exploratory_Analysis.py
 
 # Command to run the application
-CMD ["python", "startup.py"]
 
+CMD ["/venv/bin/python", "startup.py"]
 

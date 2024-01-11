@@ -25,10 +25,10 @@ dag = DAG(
     catchup=False,
 )
 
-command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/game && scrapy crawl game_covers_historic_scores_and_odds_spider -a dates=daily_update -a save_data=True -a view_data=True"
+command = f"cd {NBA_BETTING_BASE_DIR}/nba_betting && scrapy crawl nba -a dates=daily_update -a save_data=True -a view_data=True"
 
 BashOperator(
-    task_id=f"run_covers_game_scores_and_odds_spider",
+    task_id=f"run_nba",
     bash_command=command,
     dag=dag,
 )

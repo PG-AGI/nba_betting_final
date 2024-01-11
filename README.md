@@ -19,5 +19,5 @@ git clone https://github.com/username/repository.git
 Run this command in your terminal
 
 ```bash
-docker-compose up --build
+
 ```

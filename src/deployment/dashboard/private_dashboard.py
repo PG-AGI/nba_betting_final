@@ -12,10 +12,11 @@ from dotenv import load_dotenv
 from flask import redirect, url_for
 from flask_login import current_user
 from sqlalchemy import create_engine
+from sqlalchemy import text
 
 load_dotenv()
-DB_ENDPOINT = os.getenv("DB_ENDPOINT")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_ENDPOINT ="db"
+DB_PASSWORD = 123654
 
 
 # ----- Dashboard Creation -----
@@ -223,7 +224,7 @@ def get_dashboard_data(connection):
     Returns:
         A pandas DataFrame containing the processed data.
     """
-    query = """
+    query = text("""
         SELECT
             g.game_id,
             g.game_datetime,
@@ -257,7 +258,7 @@ def get_dashboard_data(connection):
         ORDER BY
             g.game_id DESC;
 
-        """
+        """)
 
     df = pd.read_sql(sql=query, con=connection)
 

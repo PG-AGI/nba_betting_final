@@ -11,7 +11,6 @@ sys.path.append(os.path.join(here, "../../"))
 
 from src.etl.main_etl import ETLPipeline
 
-load_dotenv()
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 
 # Define default arguments

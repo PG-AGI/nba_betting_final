@@ -13,7 +13,7 @@ from ..items import CoversHistoricScoresAndOddsItem
 here = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(here, "../../../.."))
 
-from utils.data_source_utils import BaseSpider, BaseSpiderZyte
+from utils.data_source_utils import BaseSpider
 
 load_dotenv()
 ZYTE_API_KEY = os.environ.get("ZYTE_API_KEY")
@@ -106,14 +106,8 @@ class GameCoversHistoricScoresAndOddsSpider(BaseSpider):
 
 
 class GameCoversHistoricScoresAndOddsSpiderZyte(
-    BaseSpiderZyte, GameCoversHistoricScoresAndOddsSpider
+    GameCoversHistoricScoresAndOddsSpider
 ):
     name = "game_covers_historic_scores_and_odds_spider_zyte"
     pipeline_name = "CoversHistoricScoresAndOddsPipeline"
     project_section = "game"
-
-    # Merge pipeline settings into custom_settings
-    pipeline_settings = BaseSpiderZyte.create_pipeline_settings(
-        project_section, pipeline_name
-    )
-    custom_settings = {**BaseSpiderZyte.custom_settings, **pipeline_settings}
