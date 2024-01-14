@@ -23,9 +23,16 @@ When the docker is built this is the output you have to wait for:-
 
 To open this link directly use shortcut `Ctrl + Click ` on the link then,
 
+<<<<<<< HEAD
 Change the url in your browser from `127.0.0.1:5000` to `127.0.0.1:80`
 
 FROM THIS:-
 ![Original URL](images/Original_URL.png)
 TO THIS:-
 ![Change URL](images/URL_Change.png)
+=======
+```bash
+docker-compose up --build
+```
+
+>>>>>>> ac34882f55336f83633f54ee91cabdc24822275d
