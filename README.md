@@ -19,16 +19,5 @@ Note:- it may take a while first time you run docker(approx 15 min).
 ## Step 3: Starting the application.
 
 When the docker is built this is the output you have to wait for:-
-![Output](images/vs_link.png)
+![Output](images/image.png)
 
-To open this link directly use shortcut `Ctrl + Click ` on the link then,
-
-Change the url in your browser from `127.0.0.1:5000` to `127.0.0.1:80`
-
-From This:-
-
-![Original URL](images/Original_URL.png)
-
-To This:-
-
-![Change URL](images/URL_Change.png)
