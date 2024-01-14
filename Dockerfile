@@ -1,15 +1,10 @@
 # Use a Python base image compatible with the project
-FROM python:3.10
+FROM python:3.9
 
-# Set up the working directory in the container
-WORKDIR /app
-
-# Copy the project files into the container
-COPY . /app
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y build-essential
-RUN python -m venv /venv
+# RUN python -m venv /venv
 
 # Install dependencies from requirements.txt
 # RUN nvidia-cublas-cu11
@@ -56,6 +51,8 @@ RUN pip install mlflow
 RUN pip install jupyter
 RUN python -m ipykernel install --user --name=python3
 RUN python -m ipykernel install --user --name=nba_kernal
+RUN pip install python-dotenv
+RUN     pip install dash_bootstrap_components
 
 # # Copy requirements.txt and install_requirements.sh
 # COPY requirements.txt install_requirements.sh ./
@@ -85,6 +82,21 @@ RUN python -m ipykernel install --user --name=nba_kernal
 # RUN python notebooks/Exploratory_Analysis.py
 
 # Command to run the application
+RUN apt install apache2 -y
+RUN a2enmod proxy
+RUN a2enmod proxy_http
+RUN printf "<VirtualHost *:80>\n\tProxyPass / http://localhost:5000/\n\tProxyPassReverse / http://localhost:5000/\n</VirtualHost>\n" > /etc/apache2/sites-enabled/000-default.conf
 
-CMD ["/venv/bin/python", "startup.py"]
+EXPOSE 5000
+EXPOSE 80
 
+# Set up the working directory in the container
+RUN mkdir -p /app
+
+WORKDIR /app
+
+# Copy the project files into the container
+COPY . /app
+
+RUN chmod +x /app/run.sh
+CMD ["bash", "/app/run.sh"]

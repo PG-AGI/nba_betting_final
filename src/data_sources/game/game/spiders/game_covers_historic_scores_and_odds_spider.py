@@ -5,7 +5,6 @@ from urllib.parse import urlencode
 
 import pytz
 import scrapy
-from dotenv import load_dotenv
 
 from ..item_loaders import CoversHistoricScoresAndOddsItemLoader
 from ..items import CoversHistoricScoresAndOddsItem
@@ -14,9 +13,6 @@ here = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(here, "../../../.."))
 
 from utils.data_source_utils import BaseSpider
-
-load_dotenv()
-ZYTE_API_KEY = os.environ.get("ZYTE_API_KEY")
 
 
 class GameCoversHistoricScoresAndOddsSpider(BaseSpider):

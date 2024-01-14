@@ -1,14 +1,14 @@
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-sys.path.append('C:/Users/SUYASH/Desktop/nba_betting_final - Copy/nba_betting/nba_betting')
+sys.path.append('/app/nba_betting/nba_betting')
 from models import Base, Game
 from sqlalchemy.exc import IntegrityError
 from scrapy.exceptions import DropItem
 import hashlib
 from datetime import datetime
 
-sys.path.append('C:/Users/SUYASH/Desktop/nba_betting_final - Copy')
+sys.path.append('/app')
 from config import team_name_mapper
 
 class PostgreSQLPipeline:

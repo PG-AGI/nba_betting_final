@@ -160,7 +160,7 @@ class BasePipeline:
     """
 
     engine = create_engine(
-        f"postgresql://postgres:pRACHI431@@localhost/nba_betting"
+        f"postgresql://postgres:123654@db/nba_betting"
     )
     ITEM_CLASS = None
 

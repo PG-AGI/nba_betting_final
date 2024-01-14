@@ -12,7 +12,7 @@ sys.path.append(os.path.join(here, "../.."))
 from database_orm import FivethirtyeightGamesTable
 
 load_dotenv()
-DB_ENDPOINT = "db"
+DB_ENDPOINT = "localhost"
 DB_PASSWORD = 123654
 
 

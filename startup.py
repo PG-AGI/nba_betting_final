@@ -9,16 +9,19 @@ from airflow.operators.bash import BashOperator
 from sqlalchemy.orm import sessionmaker
 from src.database_orm import Base  # Adjust the import path as 
 
-NBA_BETTING_BASE_DIR = "/usr/src/app/nba_betting"
+NBA_BETTING_BASE_DIR = "/app/"
+
+command = ["ls", "-l"]
+process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 # Configure basic logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # PostgreSQL connection settings
 DB_HOST = 'db'
-DB_NAME = os.getenv('DB_NAME', 'nba_betting')
-DB_USER = os.getenv('DB_USER', 'postgres')
-DB_PASS = os.getenv('DB_PASS', '123654')
+DB_NAME = 'nba_betting'
+DB_USER = 'postgres'
+DB_PASS = '123654'
 
 # Wait for the database to be ready
 def wait_for_db():
@@ -80,40 +83,53 @@ def main():
     for csv_file, table_name in csv_files:
         insert_data_from_csv(csv_file, table_name, engine)
 
-spiders = [
-    "team_nbastats_general_traditional_spider",
-    "team_nbastats_general_advanced_spider",
-    "team_nbastats_general_fourfactors_spider",
-    "team_nbastats_general_opponent_spider",
-]
+def run_DAILY():
+    spiders = [
+        "team_nbastats_general_traditional_spider",
+        "team_nbastats_general_advanced_spider",
+        "team_nbastats_general_fourfactors_spider",
+        "team_nbastats_general_opponent_spider",
+    ]
 
+    try:
+        for spider in spiders:
+            cmd_command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/team && scrapy crawl {spider} -a dates=daily_update -a save_data=True -a view_data=True"
 
-for spider in spiders:
-    cmd_command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/team && scrapy crawl {spider} -a dates=daily_update -a save_data=True -a view_data=True"
+            result = subprocess.run(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
-    result = subprocess.run(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            # Check the result
+            if result.returncode == 0:
+                print("Command executed successfully.")
+                print("Output:")
+                print(result.stdout)
+            else:
+                print("Command failed with an error:")
+                print(result.stderr)
+    except Exception as e:
+        logging.error(f"Error inserting data from scrapping (team data): {e}")
 
-    # Check the result
-    if result.returncode == 0:
-        print("Command executed successfully.")
-        print("Output:")
-        print(result.stdout)
-    else:
-        print("Command failed with an error:")
-        print(result.stderr)
-cmd_command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/game && scrapy crawl game_covers_historic_scores_and_odds_spider -a dates=daily_update -a save_data=True -a view_data=True"
+    try:
+        cmd_command = f"cd {NBA_BETTING_BASE_DIR}/src/data_sources/game && scrapy crawl game_covers_historic_scores_and_odds_spider -a dates=daily_update -a save_data=True -a view_data=True"
 
-result = subprocess.run(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        result = subprocess.run(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    
+        # Check the result
+        if result.returncode == 0:
+            print("Command executed successfully.")
+            print("Output:")
+            print(result.stdout)
+        else:
+            print("Command failed with an error:")
+            print(result.stderr)
+    except Exception as e:
+        logging.error(f"Error inserting data from scrapping (games data): {e}")
 
-# Check the result
-if result.returncode == 0:
-    print("Command executed successfully.")
-    print("Output:")
-    print(result.stdout)
-else:
-    print("Command failed with an error:")
-    print(result.stderr)
-
+    try:
+        subprocess.run(['python', 'src/data_sources/game/odds_api.py'])
+        logging.info("ODDS Api ran sucessfully.")
+    
+    except Exception as e:
+        logging.error(f"Error Running ODDS Api: {e}")
 
 def run_etl():
     # Assuming the main ETL script is located in the 'etl' subdirectory
@@ -128,6 +144,7 @@ def run_app():
 
 if __name__ == "__main__":
     main()
+    run_DAILY()
     run_etl()
     run_Bet_decisions()
     run_app()

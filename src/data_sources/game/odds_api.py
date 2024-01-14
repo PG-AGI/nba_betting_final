@@ -16,7 +16,6 @@ import numpy as np
 import pandas as pd
 import pytz
 import requests
-from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -26,10 +25,9 @@ sys.path.append(os.path.join(here, "../.."))
 from config import team_name_mapper
 from database_orm import GamesTable, LinesTable
 
-load_dotenv()
-ODDS_API_KEY = os.getenv("ODDS_API_KEY")
-DB_ENDPOINT = os.getenv("DB_ENDPOINT")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
+ODDS_API_KEY = "df028bb638dc1080d41f4b0e42a3abbe"
+DB_ENDPOINT = "db"
+DB_PASSWORD = 123654
 
 pd.set_option("display.max_columns", 100)
 

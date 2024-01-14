@@ -4,16 +4,15 @@ import os
 import autokeras as ak
 import pandas as pd
 import pytz
-from dotenv import load_dotenv
 from pycaret import classification as pyc_cls
 from pycaret import regression as pyc_reg
 from sqlalchemy import create_engine
 from tensorflow.keras.models import load_model
 
-load_dotenv()
+
 DB_ENDPOINT = "db"   #database server address that is created in PostgreSQL
 DB_PASSWORD = 123654
-NBA_BETTING_BASE_DIR = os.getenv("NBA_BETTING_BASE_DIR")  #to get env variables from the main directory
+NBA_BETTING_BASE_DIR = "/app"  #to get env variables from the main directory
 
 #Pandas display option config
 pd.set_option("display.width", 200)     
@@ -405,7 +404,7 @@ def on_demand_predictions(
 
 
 if __name__ == "__main__":
-    main_predictions(current_date=False, start_date="2020-09-01", end_date="2023-10-29")
+    main_predictions(current_date=False, start_date="2020-09-01", end_date="2024-1-29")
     on_demand_predictions(
         current_date=False, start_date="2023-09-01", end_date="2023-10-29"
     )

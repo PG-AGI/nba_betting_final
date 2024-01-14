@@ -448,6 +448,34 @@
 # zope.interface
 # zyte-api
 
+# datetime
+# numpy
+# pandas
+# pytz
+# sqlalchemy
+# scrapy
+# sqlalchemy
+# sqlalchemy.orm
+# scikit-base
+# scikit-learn
+# pendulum
+# apache-airflow
+# apache-airflow-providers-common-sql
+# apache-airflow-providers-ftp
+# apache-airflow-providers-http
+# apache-airflow-providers-imap
+# apache-airflow-providers-sqlite
+# tensorflow==2.15.0
+# autokeras==1.0.20
+# pycaret
+# scipy
+# matplotlib
+# seaborn
+# ydata_profiling
+# requests
+# itemadapter
+
+psycopg2-binary
 datetime
 numpy
 pandas
@@ -465,8 +493,8 @@ apache-airflow-providers-ftp
 apache-airflow-providers-http
 apache-airflow-providers-imap
 apache-airflow-providers-sqlite
-tensorflow==2.15.0
-autokeras==1.0.20
+tensorflow
+autokeras
 pycaret
 scipy
 matplotlib
@@ -474,3 +502,6 @@ seaborn
 ydata_profiling
 requests
 itemadapter
+nbconvert
+mlflow
+jupyter
