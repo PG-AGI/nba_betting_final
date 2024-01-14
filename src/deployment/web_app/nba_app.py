@@ -487,4 +487,10 @@ public_app = init_public_dashboard(app)
 
 if __name__ == "__main__":
     # pass
-    app.run(debug=True)
+    print("      _____________________________________________________________")
+    print("     /\                                                            \\")
+    print("     \_| Please visit on this url once server start sucessfully. |")
+    print("       |                     http://localhost                     |")
+    print("       |   ________________________________________________________|_")
+    print("        \_/__________________________________________________________/")
+    app.run(debug=True,)
