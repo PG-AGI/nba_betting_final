@@ -14,6 +14,8 @@ Run this command in your terminal to build Docker container
 docker-compose up --build
 ```
 
+REMEMBER to use ``docker-compose down`` Everytime you stop the docker this will freeup your docker space.
+
 Note:- it may take a while first time you run docker(approx 15 min).
 
 ## Step 3: Starting the application.
